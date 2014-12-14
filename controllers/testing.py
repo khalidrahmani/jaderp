@@ -18,7 +18,7 @@ NOMODULE_TEMPLATE = Template(u"""<!DOCTYPE html>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>OpenERP Testing</title>
+        <title>Jad Testing</title>
     </head>
     <body>
         <form action="/web/tests" method="GET">
@@ -35,7 +35,7 @@ NOMODULE_TEMPLATE = Template(u"""<!DOCTYPE html>
 """, default_filters=['h'])
 NOTFOUND = Template(u"""
 <p>Unable to find the module [${module}], please check that the module
-   name is correct and the module is on OpenERP's path.</p>
+   name is correct and the module is on Jad's path.</p>
 <a href="/web/tests">&lt;&lt; Back to tests</a>
 """, default_filters=['h'])
 TESTING = Template(u"""<!DOCTYPE html>
@@ -44,7 +44,7 @@ TESTING = Template(u"""<!DOCTYPE html>
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>OpenERP Web Tests</title>
+    <title>Jad Web Tests</title>
     <link rel="shortcut icon" href="/web/static/src/img/favicon.ico" type="image/x-icon"/>
 
     <link rel="stylesheet" href="/web/static/lib/qunit/qunit.css">

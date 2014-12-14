@@ -1224,7 +1224,7 @@ instance.web.search.GroupbyGroup = instance.web.search.FilterGroup.extend({
 instance.web.search.Filter = instance.web.search.Input.extend(/** @lends instance.web.search.Filter# */{
     template: 'SearchView.filter',
     /**
-     * Implementation of the OpenERP filters (button with a context and/or
+     * Implementation of the Jad filters (button with a context and/or
      * a domain sent as-is to the search view)
      *
      * Filters are only attributes holder, the actual work (compositing
@@ -1335,7 +1335,7 @@ instance.web.search.Field = instance.web.search.Input.extend( /** @lends instanc
     }
 });
 /**
- * Implementation of the ``char`` OpenERP field type:
+ * Implementation of the ``char`` Jad field type:
  *
  * * Default operator is ``ilike`` rather than ``=``
  *

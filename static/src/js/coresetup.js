@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * OpenERP Web core
+ * Jad Web core
  *--------------------------------------------------------*/
 var console;
 if (!console) {
@@ -407,7 +407,7 @@ instance.web.Bus = instance.web.Class.extend(instance.web.EventDispatcherMixin, 
 })
 instance.web.bus = new instance.web.Bus();
 
-/** OpenERP Translations */
+/** Jad Translations */
 instance.web.TranslationDataBase = instance.web.Class.extend(/** @lends instance.web.TranslationDataBase# */{
     /**
      * @constructs instance.web.TranslationDataBase
@@ -551,7 +551,7 @@ instance.web._t = new instance.web.TranslationDataBase().build_translation_funct
  *
  * Useful when defining translatable strings in code evaluated before the
  * translation database is loaded, as class attributes or at the top-level of
- * an OpenERP Web module
+ * an Jad Web module
  *
  * @param {String} s string to translate
  * @returns {Object} lazy translation object

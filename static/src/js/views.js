@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * OpenERP web library
+ * Jad web library
  *---------------------------------------------------------*/
 
 openerp.web.views = function(instance) {
@@ -279,7 +279,7 @@ instance.web.ActionManager = instance.web.Widget.extend({
         });
     },
     /**
-     * Execute an OpenERP action
+     * Execute an Jad action
      *
      * @param {Number|String|Object} Can be either an action id, a client action or an action descriptor.
      * @param {Object} [options]

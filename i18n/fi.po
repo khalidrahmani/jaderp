@@ -59,14 +59,14 @@ msgstr "pienempi tai yhtäsuuri kuin"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
 "created,\n"
 "                    you will be able to install your first application."
 msgstr ""
-"Täytä tämä lomake luodaksesi OpenERP-tietokannan. Voit luoda\n"
+"Täytä tämä lomake luodaksesi Jad-tietokannan. Voit luoda\n"
 "                     tietokantoja eri yrityksille tai eri tarpeisiin (testi, "
 "tuotanto).\n"
 "                     Kun tietokanta on luotu, voit asentaa ensimmäisen "
@@ -357,8 +357,8 @@ msgstr "Painiketyyppi:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA yritys"
+msgid "Jad SA Company"
+msgstr "Jad SA yritys"
 
 #. module: web
 #. openerp-web
@@ -898,8 +898,8 @@ msgstr "Etsi: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "Valitse tämä valintaruutu koekäyttääksesi OpenERP:iä."
+msgid "Check this box to evaluate Jad."
+msgstr "Valitse tämä valintaruutu koekäyttääksesi Jad:iä."
 
 #. module: web
 #. openerp-web
@@ -957,8 +957,8 @@ msgstr "1. Tuo .CSV tiedosto"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1113,8 +1113,8 @@ msgstr "Poista"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "Oma OpenERP.com -tilini"
+msgid "My Jad.com account"
+msgstr "Oma Jad.com -tilini"
 
 #. module: web
 #. openerp-web
@@ -1492,8 +1492,8 @@ msgstr "Poista kaikki"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
-msgstr "OpenERP-istuntosi on vanhentunut. Ole hyvä ja päivitä sivu."
+msgid "Your Jad session expired. Please refresh the current web page."
+msgstr "Jad-istuntosi on vanhentunut. Ole hyvä ja päivitä sivu."
 
 #. module: web
 #. openerp-web
@@ -1919,8 +1919,8 @@ msgstr "Ole hyvä ja valitse kentät vientiluetteloon."
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "Copyright © 2004-TODAY OpenERP SA. Kaikki oikeudet pidätetään."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "Copyright © 2004-TODAY Jad SA. Kaikki oikeudet pidätetään."
 
 #. module: web
 #. openerp-web
@@ -2043,8 +2043,8 @@ msgstr "Oletus:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2432,8 +2432,8 @@ msgstr "Nappi"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP on rekisteröity tavaramerkki"
+msgid "Jad is a trademark of the"
+msgstr "Jad on rekisteröity tavaramerkki"
 
 #. module: web
 #. openerp-web
@@ -2478,8 +2478,8 @@ msgstr "on epätosi"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "Tietoja OpenERP:istä"
+msgid "About Jad"
+msgstr "Tietoja Jad:istä"
 
 #. module: web
 #. openerp-web

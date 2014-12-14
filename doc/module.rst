@@ -1,17 +1,17 @@
 .. _module:
 
-Building an OpenERP Web module
+Building an Jad Web module
 ==============================
 
-There is no significant distinction between an OpenERP Web module and
-an OpenERP module, the web part is mostly additional data and code
-inside a regular OpenERP module. This allows providing more seamless
+There is no significant distinction between an Jad Web module and
+an Jad module, the web part is mostly additional data and code
+inside a regular Jad module. This allows providing more seamless
 features by integrating your module deeper into the web client.
 
 A Basic Module
 --------------
 
-A very basic OpenERP module structure will be our starting point:
+A very basic Jad module structure will be our starting point:
 
 .. code-block:: text
 
@@ -22,12 +22,12 @@ A very basic OpenERP module structure will be our starting point:
 .. literalinclude:: module/__openerp__.py
     :language: python
 
-This is a sufficient minimal declaration of a valid OpenERP module.
+This is a sufficient minimal declaration of a valid Jad module.
 
 Web Declaration
 ---------------
 
-There is no such thing as a "web module" declaration. An OpenERP
+There is no such thing as a "web module" declaration. An Jad
 module is automatically recognized as "web-enabled" if it contains a
 ``static`` directory at its root, so:
 
@@ -83,7 +83,7 @@ message should appear in your browser's development console.
 .. note::
 
     Because the manifest file has been edited, you will have to
-    restart the OpenERP server itself for it to be taken in account.
+    restart the Jad server itself for it to be taken in account.
 
     You may also want to open your browser's console *before*
     reloading, depending on the browser messages printed while the
@@ -113,7 +113,7 @@ as previously. The differences, though invisible at this point, are:
   available for use
 
 The latter point is what the ``instance`` parameter to the function
-provides: an instance of the OpenERP Web client, with the contents of
+provides: an instance of the Jad Web client, with the contents of
 all the new module's dependencies loaded in and initialized. These are
 the entry points to the web client's APIs.
 
@@ -163,7 +163,7 @@ first create the stylesheet file:
     :language: css
 
 then add a reference to the stylesheet in the module's manifest (which
-will require restarting the OpenERP Server to see the changes, as
+will require restarting the Jad Server to see the changes, as
 usual):
 
 .. literalinclude:: module/__openerp__.py.4.diff
@@ -176,7 +176,7 @@ the world's your canvas.
 .. note::
 
     Prefixing CSS rules with both ``.openerp`` (to ensure the rule
-    will apply only within the confines of the OpenERP Web client) and
+    will apply only within the confines of the Jad Web client) and
     a class at the root of your own hierarchy of widgets is strongly
     recommended to avoid "leaking" styles in case the code is running
     embedded in an other web page, and does not have the whole screen
@@ -195,12 +195,12 @@ method [#DOM-building]_ is to use `a template
 <http://en.wikipedia.org/wiki/Web_template>`_ to render a widget's
 DOM.
 
-OpenERP Web's template language is :doc:`qweb`. Although any
+Jad Web's template language is :doc:`qweb`. Although any
 templating engine can be used (e.g. `mustache
 <http://mustache.github.com/>`_ or `_.template
 <http://underscorejs.org/#template>`_) QWeb has important features
 which other template engines may not provide, and has special
-integration to OpenERP Web widgets.
+integration to Jad Web widgets.
 
 Adding a template file is similar to adding a style sheet:
 

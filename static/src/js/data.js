@@ -3,7 +3,7 @@ openerp.web.data = function(instance) {
 
 /**
  * Serializes the sort criterion array of a dataset into a form which can be
- * consumed by OpenERP's RPC APIs.
+ * consumed by Jad's RPC APIs.
  *
  * @param {Array} criterion array of fields, from first to last criteria, prefixed with '-' for reverse sorting
  * @returns {String} SQL-like sorting string (``ORDER BY``) clause
@@ -258,7 +258,7 @@ instance.web.Model = instance.web.Class.extend({
      * @constructs instance.web.Model
      * @extends instance.web.Class
      *
-     * @param {String} model_name name of the OpenERP model this object is bound to
+     * @param {String} model_name name of the Jad model this object is bound to
      * @param {Object} [context]
      * @param {Array} [domain]
      */
@@ -277,7 +277,7 @@ instance.web.Model = instance.web.Class.extend({
         };
     },
     /**
-     * Call a method (over RPC) on the bound OpenERP model.
+     * Call a method (over RPC) on the bound Jad model.
      *
      * @param {String} method name of the method to call
      * @param {Array} [args] positional arguments
@@ -312,7 +312,7 @@ instance.web.Model = instance.web.Class.extend({
         return new instance.web.Query(this, fields);
     },
     /**
-     * Executes a signal on the designated workflow, on the bound OpenERP model
+     * Executes a signal on the designated workflow, on the bound Jad model
      *
      * @param {Number} id workflow identifier
      * @param {String} signal signal to trigger on the workflow
@@ -368,11 +368,11 @@ instance.web.Model = instance.web.Class.extend({
 
 instance.web.DataSet =  instance.web.Class.extend(instance.web.PropertiesMixin, {
     /**
-     * Collection of OpenERP records, used to share records and the current selection between views.
+     * Collection of Jad records, used to share records and the current selection between views.
      *
      * @constructs instance.web.DataSet
      *
-     * @param {String} model the OpenERP model this dataset will manage
+     * @param {String} model the Jad model this dataset will manage
      */
     init: function(parent, model, context) {
         instance.web.PropertiesMixin.init.call(this);
@@ -412,8 +412,8 @@ instance.web.DataSet =  instance.web.Class.extend(instance.web.PropertiesMixin, 
     get_id_index: function(id) {
         for (var i=0, ii=this.ids.length; i<ii; i++) {
             // Here we use type coercion because of the mess potentially caused by
-            // OpenERP ids fetched from the DOM as string. (eg: dhtmlxcalendar)
-            // OpenERP ids can be non-numeric too ! (eg: recursive events in calendar)
+            // Jad ids fetched from the DOM as string. (eg: dhtmlxcalendar)
+            // Jad ids can be non-numeric too ! (eg: recursive events in calendar)
             if (id == this.ids[i]) {
                 return i;
             }
@@ -567,7 +567,7 @@ instance.web.DataSet =  instance.web.Class.extend(instance.web.PropertiesMixin, 
     /**
      * 
      * @param {String} name name to perform a search for/on
-     * @param {Array} [domain=[]] filters for the objects returned, OpenERP domain
+     * @param {Array} [domain=[]] filters for the objects returned, Jad domain
      * @param {String} [operator='ilike'] matching operator to use with the provided name value
      * @param {Number} [limit=0] maximum number of matches to return
      * @param {Function} callback function to call with name_search result
@@ -598,7 +598,7 @@ instance.web.DataSet =  instance.web.Class.extend(instance.web.PropertiesMixin, 
      * Reads or changes sort criteria on the dataset.
      *
      * If not provided with any argument, serializes the sort criteria to
-     * an SQL-like form usable by OpenERP's ORM.
+     * an SQL-like form usable by Jad's ORM.
      *
      * If given a field, will set that field as first sorting criteria or,
      * if the field is already the first sorting criteria, will reverse it.

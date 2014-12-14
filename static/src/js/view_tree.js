@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * OpenERP web library
+ * Jad web library
  *---------------------------------------------------------*/
 
 openerp.web.view_tree = function(instance) {
@@ -62,7 +62,7 @@ instance.web.TreeView = instance.web.View.extend(/** @lends instance.web.TreeVie
     load_tree: function (fields_view) {
         var self = this;
         var has_toolbar = !!fields_view.arch.attrs.toolbar;
-        // field name in OpenERP is kinda stupid: this is the name of the field
+        // field name in Jad is kinda stupid: this is the name of the field
         // holding the ids to the children of the current node, why call it
         // field_parent?
         this.children_field = fields_view['field_parent'];

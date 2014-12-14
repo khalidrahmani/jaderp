@@ -25,7 +25,7 @@ asynchronous systems, and warn against systematic issues or dangers.
 Deferreds
 ---------
 
-Deferreds are a form of `promises`_. OpenERP Web currently uses
+Deferreds are a form of `promises`_. Jad Web currently uses
 `jQuery's deferred`_.
 
 The core idea of deferreds is that potentially asynchronous methods
@@ -176,7 +176,7 @@ Deferred chaining
 
 A second useful composition is starting an asynchronous operation as
 the result of an other asynchronous operation, and wanting the result
-of both: with the tools described so far, handling e.g. OpenERP's
+of both: with the tools described so far, handling e.g. Jad's
 search/read sequence with this would require something along the lines
 of:
 

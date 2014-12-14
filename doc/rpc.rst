@@ -6,10 +6,10 @@ effects (and sometimes you're given data to display from third parties
 so you don't have to make any effort), but a point generally comes
 where you'll want to talk to the world and make some network requests.
 
-OpenERP Web provides two primary APIs to handle this, a low-level
-JSON-RPC based API communicating with the Python section of OpenERP
+Jad Web provides two primary APIs to handle this, a low-level
+JSON-RPC based API communicating with the Python section of Jad
 Web (and of your addon, if you have a Python part) and a high-level
-API above that allowing your code to talk directly to the OpenERP
+API above that allowing your code to talk directly to the Jad
 server, using familiar-looking calls.
 
 All networking APIs are :doc:`asynchronous </async>`. As a result, all
@@ -17,18 +17,18 @@ of them will return :js:class:`Deferred` objects (whether they resolve
 those with values or not). Understanding how those work before before
 moving on is probably necessary.
 
-High-level API: calling into OpenERP models
+High-level API: calling into Jad models
 -------------------------------------------
 
-Access to OpenERP object methods (made available through XML-RPC from
+Access to Jad object methods (made available through XML-RPC from
 the server) is done via the :js:class:`openerp.web.Model` class. This
-class maps onto the OpenERP server objects via two primary methods,
+class maps onto the Jad server objects via two primary methods,
 :js:func:`~openerp.web.Model.call` and
 :js:func:`~openerp.web.Model.query`.
 
 :js:func:`~openerp.web.Model.call` is a direct mapping to the
-corresponding method of the OpenERP server object. Its usage is
-similar to that of the OpenERP Model API, with three differences:
+corresponding method of the Jad server object. Its usage is
+similar to that of the Jad Model API, with three differences:
 
 * The interface is :doc:`asynchronous </async>`, so instead of
   returning results directly RPC method calls will return
@@ -52,7 +52,7 @@ similar to that of the OpenERP Model API, with three differences:
     });
 
 :js:func:`~openerp.web.Model.query` is a shortcut for a builder-style
-interface to searches (``search`` + ``read`` in OpenERP RPC terms). It
+interface to searches (``search`` + ``read`` in Jad RPC terms). It
 returns a :js:class:`~openerp.web.Query` object which is immutable but
 allows building new :js:class:`~openerp.web.Query` instances from the
 first one, adding new properties or modifiying the parent object's:
@@ -78,7 +78,7 @@ around and use them differently/add new specifications on them.
 
     .. js:attribute:: openerp.web.Model.name
 
-        name of the OpenERP model this object is bound to
+        name of the Jad model this object is bound to
 
     .. js:function:: openerp.web.Model.call(method[, args][, kwargs])
 
@@ -184,12 +184,12 @@ around and use them differently/add new specifications on them.
 Aggregation (grouping)
 ~~~~~~~~~~~~~~~~~~~~~~
 
-OpenERP has powerful grouping capacities, but they are kind-of strange
+Jad has powerful grouping capacities, but they are kind-of strange
 in that they're recursive, and level n+1 relies on data provided
 directly by the grouping at level n. As a result, while ``read_group``
 works it's not a very intuitive API.
 
-OpenERP Web 7.0 eschews direct calls to ``read_group`` in favor of
+Jad Web 7.0 eschews direct calls to ``read_group`` in favor of
 calling a method of :js:class:`~openerp.web.Query`, `much in the way
 it is one in SQLAlchemy
 <http://docs.sqlalchemy.org/en/latest/orm/query.html#sqlalchemy.orm.query.Query.group_by>`_ [#]_:
@@ -245,9 +245,9 @@ an array of :js:class:`~openerp.web.QueryGroup`.
 Low-level API: RPC calls to Python side
 ---------------------------------------
 
-While the previous section is great for calling core OpenERP code
+While the previous section is great for calling core Jad code
 (models code), it does not work if you want to call the Python side of
-OpenERP Web.
+Jad Web.
 
 For this, a lower-level API exists on on
 :js:class:`~openerp.web.Connection` objects (usually available through

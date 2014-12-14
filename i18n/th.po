@@ -59,7 +59,7 @@ msgstr "น้อยกว่าหรือเท่ากับ"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
@@ -352,8 +352,8 @@ msgstr "ชนิด ปุ่มกด"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA Company"
+msgid "Jad SA Company"
+msgstr "Jad SA Company"
 
 #. module: web
 #. openerp-web
@@ -892,8 +892,8 @@ msgstr "ค้นหา: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "ทำเครื่องหมายที่ช่องนี้เพื่อทดลอง OpenERP"
+msgid "Check this box to evaluate Jad."
+msgstr "ทำเครื่องหมายที่ช่องนี้เพื่อทดลอง Jad"
 
 #. module: web
 #. openerp-web
@@ -951,8 +951,8 @@ msgstr "1. นำเข้า .CSV ไฟล์"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1107,8 +1107,8 @@ msgstr "ลบ"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "บัญชี OpenERP.com ของฉัน"
+msgid "My Jad.com account"
+msgstr "บัญชี Jad.com ของฉัน"
 
 #. module: web
 #. openerp-web
@@ -1484,7 +1484,7 @@ msgstr "ลบทั้งหมด"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr "เซสชั่น OpenErP ของคุณหมดอายุ กรุณารีเฟรชหน้าเว็บปัจจุบัน"
 
 #. module: web
@@ -1911,8 +1911,8 @@ msgstr "โปรดเลือกฟิลเพื่อบันทึกร
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "ลิขสิทธิ์ © 2004-TODAY OpenERP SA. All Rights Reserved."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "ลิขสิทธิ์ © 2004-TODAY Jad SA. All Rights Reserved."
 
 #. module: web
 #. openerp-web
@@ -2035,8 +2035,8 @@ msgstr "ค่าปริยาย:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2423,8 +2423,8 @@ msgstr "ปุ่ม"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP เป็นเครื่องหมายการค้าของ"
+msgid "Jad is a trademark of the"
+msgstr "Jad เป็นเครื่องหมายการค้าของ"
 
 #. module: web
 #. openerp-web
@@ -2469,8 +2469,8 @@ msgstr "เป็นเท็จ"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "เกี่ยวกับ OpenERP"
+msgid "About Jad"
+msgstr "เกี่ยวกับ Jad"
 
 #. module: web
 #. openerp-web

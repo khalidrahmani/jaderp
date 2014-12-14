@@ -1,3 +1,4 @@
+
 # Georgian translation for openerp-web
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
 # This file is distributed under the same license as the openerp-web package.
@@ -59,7 +60,7 @@ msgstr "უდრის ან ნაკლებია"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
@@ -352,8 +353,8 @@ msgstr "ღილაკის სახეობა:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA Company"
+msgid "Jad SA Company"
+msgstr "Jad SA Company"
 
 #. module: web
 #. openerp-web
@@ -889,7 +890,7 @@ msgstr "ძიება: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
+msgid "Check this box to evaluate Jad."
 msgstr ""
 
 #. module: web
@@ -948,8 +949,8 @@ msgstr "1. დააიმპორტე .CSV ფაილი"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1104,7 +1105,7 @@ msgstr "წაშალე"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
+msgid "My Jad.com account"
 msgstr ""
 
 #. module: web
@@ -1477,7 +1478,7 @@ msgstr "ყველას მოცილება"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
 
 #. module: web
@@ -1904,8 +1905,8 @@ msgstr "გთხოვთ აირჩიოთ ველები შესა
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "საავტორო უფლება © 2004-TODAY OpenERP SA. ყველა უფლება დაცულია."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "საავტორო უფლება © 2004-TODAY Jad SA. ყველა უფლება დაცულია."
 
 #. module: web
 #. openerp-web
@@ -2028,8 +2029,8 @@ msgstr "ნაგულისხმევი:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2414,8 +2415,8 @@ msgstr "ღილაკი"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP სავაჭრო ნიშანი გახლავთ"
+msgid "Jad is a trademark of the"
+msgstr "Jad სავაჭრო ნიშანი გახლავთ"
 
 #. module: web
 #. openerp-web
@@ -2460,7 +2461,7 @@ msgstr "არის სიცრუე"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
+msgid "About Jad"
 msgstr ""
 
 #. module: web

@@ -59,14 +59,14 @@ msgstr "小于等于"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
 "created,\n"
 "                    you will be able to install your first application."
 msgstr ""
-"填充此表单以创建OpenERP数据库。你能\n"
+"填充此表单以创建Jad数据库。你能\n"
 "为不同的公司或者不同的目的（测试，生成）\n"
 "创建数据库。一旦数据库被创建，你将能安装\n"
 "你的第一个应用。"
@@ -356,8 +356,8 @@ msgstr "按钮类型："
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA 公司"
+msgid "Jad SA Company"
+msgstr "Jad SA 公司"
 
 #. module: web
 #. openerp-web
@@ -898,8 +898,8 @@ msgstr "搜索： "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "请选中此项评估OpenERP"
+msgid "Check this box to evaluate Jad."
+msgstr "请选中此项评估Jad"
 
 #. module: web
 #. openerp-web
@@ -957,8 +957,8 @@ msgstr "1. 导入 .CSV 文件"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1113,8 +1113,8 @@ msgstr "删除"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "我的OpenERP.com账号"
+msgid "My Jad.com account"
+msgstr "我的Jad.com账号"
 
 #. module: web
 #. openerp-web
@@ -1488,8 +1488,8 @@ msgstr "全部移除"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
-msgstr "你的OpenERP对话已经过期。请刷新当前的web 页面。"
+msgid "Your Jad session expired. Please refresh the current web page."
+msgstr "你的Jad对话已经过期。请刷新当前的web 页面。"
 
 #. module: web
 #. openerp-web
@@ -1913,8 +1913,8 @@ msgstr "请选择要保存成导出列表的字段..."
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "版权所有 © 2004-TODAY OpenERP SA。保留所有权利。"
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "版权所有 © 2004-TODAY Jad SA。保留所有权利。"
 
 #. module: web
 #. openerp-web
@@ -2037,8 +2037,8 @@ msgstr "默认："
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2421,8 +2421,8 @@ msgstr "按钮"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP 是注册商标，由"
+msgid "Jad is a trademark of the"
+msgstr "Jad 是注册商标，由"
 
 #. module: web
 #. openerp-web
@@ -2467,8 +2467,8 @@ msgstr "为假"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "关于 OpenERP"
+msgid "About Jad"
+msgstr "关于 Jad"
 
 #. module: web
 #. openerp-web

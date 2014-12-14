@@ -59,14 +59,14 @@ msgstr "다음보다 작거나 같음"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
 "created,\n"
 "                    you will be able to install your first application."
 msgstr ""
-"OpenERP 데이터베이스를 생성하기위해 이 폼을 채워주세요. \n"
+"Jad 데이터베이스를 생성하기위해 이 폼을 채워주세요. \n"
 "다른 회사나 다른 목적으로 데이터베이스를 생성할 수있습니다. (테스트용, 운영서버용)\n"
 "데이터베이스가 생성된후에, 애플리케이션을 설치할 수 있습니다."
 
@@ -355,8 +355,8 @@ msgstr "버튼 유형:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA Company"
+msgid "Jad SA Company"
+msgstr "Jad SA Company"
 
 #. module: web
 #. openerp-web
@@ -892,8 +892,8 @@ msgstr "찾기: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "OpenERP를 테스트해보려면 이 박스를 체크하세요"
+msgid "Check this box to evaluate Jad."
+msgstr "Jad를 테스트해보려면 이 박스를 체크하세요"
 
 #. module: web
 #. openerp-web
@@ -951,8 +951,8 @@ msgstr ".CSV 파일 불러오기"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1107,8 +1107,8 @@ msgstr "삭제"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "나의 OpenERP.com 계정"
+msgid "My Jad.com account"
+msgstr "나의 Jad.com 계정"
 
 #. module: web
 #. openerp-web
@@ -1484,9 +1484,9 @@ msgstr "모두 삭제"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
-"OpenERP의 세션이 만료되었습니다. \r\n"
+"Jad의 세션이 만료되었습니다. \r\n"
 "현재 웹페이지를 새로고침하여주세요."
 
 #. module: web
@@ -1911,8 +1911,8 @@ msgstr "내보내기 목록을 저장할 필드를 선택하세요..."
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "Copyright © 2004-TODAY OpenERP SA. 모든 권리 보유."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "Copyright © 2004-TODAY Jad SA. 모든 권리 보유."
 
 #. module: web
 #. openerp-web
@@ -2035,8 +2035,8 @@ msgstr "기본 값:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2421,8 +2421,8 @@ msgstr "버튼"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP은 다음 소유의 등록 상표입니다:"
+msgid "Jad is a trademark of the"
+msgstr "Jad은 다음 소유의 등록 상표입니다:"
 
 #. module: web
 #. openerp-web
@@ -2467,8 +2467,8 @@ msgstr "거짓"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "OpenERP 정보"
+msgid "About Jad"
+msgstr "Jad 정보"
 
 #. module: web
 #. openerp-web

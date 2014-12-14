@@ -36,12 +36,12 @@ Global selectors should be avoided
 ''''''''''''''''''''''''''''''''''
 
 Because a component may be used several times in a single page (an
-example in OpenERP is dashboards), queries should be restricted to a
+example in Jad is dashboards), queries should be restricted to a
 given component's scope. Unfiltered selections such as ``$(selector)``
 or ``document.querySelectorAll(selector)`` will generally lead to
 unintended or incorrect behavior.
 
-OpenERP Web's :js:class:`~openerp.web.Widget` has an attribute
+Jad Web's :js:class:`~openerp.web.Widget` has an attribute
 providing its DOM root :js:attr:`Widget.$el <openerp.web.Widget.$el>`,
 and a shortcut to select nodes directly :js:attr:`Widget.$
 <openerp.web.Widget.$>`.
@@ -54,11 +54,11 @@ Understand deferreds
 
 Deferreds, promises, futures, …
 
-Known under many names, these objects are essential to and (in OpenERP
+Known under many names, these objects are essential to and (in Jad
 Web) widely used for making :doc:`asynchronous javascript operations
 <async>` palatable and understandable.
 
-OpenERP Web guidelines
+Jad Web guidelines
 ----------------------
 
 * HTML templating/rendering should use :doc:`qweb` unless absolutely

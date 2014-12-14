@@ -59,7 +59,7 @@ msgstr "kurang atau sama dengan"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
@@ -352,7 +352,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
+msgid "Jad SA Company"
 msgstr ""
 
 #. module: web
@@ -889,7 +889,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
+msgid "Check this box to evaluate Jad."
 msgstr ""
 
 #. module: web
@@ -948,7 +948,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
+msgid "Jad.com"
 msgstr ""
 
 #. module: web
@@ -1104,7 +1104,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
+msgid "My Jad.com account"
 msgstr ""
 
 #. module: web
@@ -1473,7 +1473,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
 
 #. module: web
@@ -1898,7 +1898,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
 msgstr ""
 
 #. module: web
@@ -2022,7 +2022,7 @@ msgstr ""
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
+msgid "Jad"
 msgstr ""
 
 #. module: web
@@ -2404,7 +2404,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
+msgid "Jad is a trademark of the"
 msgstr ""
 
 #. module: web
@@ -2450,7 +2450,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
+msgid "About Jad"
 msgstr ""
 
 #. module: web

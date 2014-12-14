@@ -38,7 +38,7 @@ from .. import http
 openerpweb = http
 
 #----------------------------------------------------------
-# OpenERP Web helpers
+# Jad Web helpers
 #----------------------------------------------------------
 
 def rjsmin(script):
@@ -360,7 +360,7 @@ def make_conditional(req, response, last_modified=None, etag=None):
     Uses Werkzeug's own :meth:`ETagResponseMixin.make_conditional`, after
     setting ``last_modified`` and ``etag`` correctly on the response object
 
-    :param req: OpenERP request
+    :param req: Jad request
     :type req: web.common.http.WebRequest
     :param response: Werkzeug response
     :type response: werkzeug.wrappers.Response
@@ -447,7 +447,7 @@ def generate_views(action):
     action['views'] = [(view_id, view_modes[0])]
 
 def fix_view_modes(action):
-    """ For historical reasons, OpenERP has weird dealings in relation to
+    """ For historical reasons, Jad has weird dealings in relation to
     view_mode and the view_type attribute (on window actions):
 
     * one of the view modes is ``tree``, which stands for both list views
@@ -533,7 +533,7 @@ def content_disposition(filename, req):
 
 
 #----------------------------------------------------------
-# OpenERP Web web Controllers
+# Jad Web web Controllers
 #----------------------------------------------------------
 
 html_template = """<!DOCTYPE html>
@@ -541,7 +541,7 @@ html_template = """<!DOCTYPE html>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Systeme de Gestion</title>
+        <title>Jad</title>
         <link rel="shortcut icon" href="/web/static/src/img/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" href="/web/static/src/css/full.css" />
         %(css)s
@@ -740,7 +740,7 @@ class Proxy(openerpweb.Controller):
         It is strongly recommended to not request binary files through this,
         as the result will be a binary data blob as well.
 
-        :param req: OpenERP request
+        :param req: Jad request
         :param path: actual request path
         :return: file content
         """
@@ -954,8 +954,8 @@ class Menu(openerpweb.Controller):
     def get_user_roots(self, req):
         """ Return all root menu ids visible for the session user.
 
-        :param req: A request object, with an OpenERP session attribute
-        :type req: < session -> OpenERPSession >
+        :param req: A request object, with an Jad session attribute
+        :type req: < session -> JadSession >
         :return: the root menu ids
         :rtype: list(int)
         """
@@ -978,8 +978,8 @@ class Menu(openerpweb.Controller):
     def load(self, req):
         """ Loads all menu items (all applications and their sub-menus).
 
-        :param req: A request object, with an OpenERP session attribute
-        :type req: < session -> OpenERPSession >
+        :param req: A request object, with an Jad session attribute
+        :type req: < session -> JadSession >
         :return: the menu root
         :rtype: dict('children': menu_nodes)
         """
@@ -1262,7 +1262,7 @@ class Binary(openerpweb.Controller):
         binary field (via ``default_get``), otherwise fetches the field for
         that precise record.
 
-        :param req: OpenERP request
+        :param req: Jad request
         :type req: :class:`web.common.http.HttpRequest`
         :param str model: name of the model to fetch the binary from
         :param str field: binary field
@@ -1594,7 +1594,7 @@ class ExportFormat(object):
         raise NotImplementedError()
 
     def from_data(self, fields, rows):
-        """ Conversion method from OpenERP's export data to whatever the
+        """ Conversion method from Jad's export data to whatever the
         current export class outputs
 
         :params list fields: a list of fields to export

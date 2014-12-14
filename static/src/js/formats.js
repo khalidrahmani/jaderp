@@ -122,7 +122,7 @@ instance.web.human_size = function(size) {
 /**
  * Formats a single atomic value based on a field descriptor
  *
- * @param {Object} value read from OpenERP
+ * @param {Object} value read from Jad
  * @param {Object} descriptor union of orm field and view field
  * @param {Object} [descriptor.widget] widget to use to display the value
  * @param {Object} descriptor.type fallback if no widget is provided, or if the provided widget is unknown

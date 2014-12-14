@@ -59,7 +59,7 @@ msgstr "কম অথবা সমান"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
@@ -352,7 +352,7 @@ msgstr "বোতামের ধরণ:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
+msgid "Jad SA Company"
 msgstr "ওপেন-ই-আর-পি এসএ কোম্পানির"
 
 #. module: web
@@ -889,7 +889,7 @@ msgstr "অনুসন্ধান: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
+msgid "Check this box to evaluate Jad."
 msgstr ""
 
 #. module: web
@@ -948,8 +948,8 @@ msgstr "1. একটি .CSV ফাইল আনায়ন করুন"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1104,7 +1104,7 @@ msgstr "মুছে ফেলুন"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
+msgid "My Jad.com account"
 msgstr ""
 
 #. module: web
@@ -1477,7 +1477,7 @@ msgstr "সব সরান"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
 
 #. module: web
@@ -1905,7 +1905,7 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
 msgstr "কপিরাইট © 2004-আজকে ওপেন-ই-আর-পি এসএ. সর্বসত্ত্ব সংরক্ষিত।"
 
 #. module: web
@@ -2029,7 +2029,7 @@ msgstr "অবিকল্পিত:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
+msgid "Jad"
 msgstr "ওপেন-ই-আর-পি"
 
 #. module: web
@@ -2416,7 +2416,7 @@ msgstr "বোতাম"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
+msgid "Jad is a trademark of the"
 msgstr "ওপেন-ই-আর-পি হল একটি ট্রেডমার্ক"
 
 #. module: web
@@ -2462,7 +2462,7 @@ msgstr "মিথ্যা"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
+msgid "About Jad"
 msgstr ""
 
 #. module: web

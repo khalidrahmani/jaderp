@@ -3,10 +3,10 @@ openerp.web.dates = function(instance) {
 var _t = instance.web._t;
 
 /**
- * Converts a string to a Date javascript object using OpenERP's
+ * Converts a string to a Date javascript object using Jad's
  * datetime string format (exemple: '2011-12-01 15:12:35').
  * 
- * The time zone is assumed to be UTC (standard for OpenERP 6.1)
+ * The time zone is assumed to be UTC (standard for Jad 6.1)
  * and will be converted to the browser's time zone.
  * 
  * @param {String} str A string representing a datetime.
@@ -29,7 +29,7 @@ instance.web.str_to_datetime = function(str) {
 };
 
 /**
- * Converts a string to a Date javascript object using OpenERP's
+ * Converts a string to a Date javascript object using Jad's
  * date string format (exemple: '2011-12-01').
  * 
  * As a date is not subject to time zones, we assume it should be
@@ -56,10 +56,10 @@ instance.web.str_to_date = function(str) {
 };
 
 /**
- * Converts a string to a Date javascript object using OpenERP's
+ * Converts a string to a Date javascript object using Jad's
  * time string format (exemple: '15:12:35').
  * 
- * The OpenERP times are supposed to always be naive times. We assume it is
+ * The Jad times are supposed to always be naive times. We assume it is
  * represented using a javascript Date with a date 1 of January 1970 and a
  * time corresponding to the meant time in the browser's time zone.
  * 
@@ -96,11 +96,11 @@ var zpad = function(str, size) {
 };
 
 /**
- * Converts a Date javascript object to a string using OpenERP's
+ * Converts a Date javascript object to a string using Jad's
  * datetime string format (exemple: '2011-12-01 15:12:35').
  * 
  * The time zone of the Date object is assumed to be the one of the
- * browser and it will be converted to UTC (standard for OpenERP 6.1).
+ * browser and it will be converted to UTC (standard for Jad 6.1).
  * 
  * @param {Date} obj
  * @returns {String} A string representing a datetime.
@@ -115,7 +115,7 @@ instance.web.datetime_to_str = function(obj) {
 };
 
 /**
- * Converts a Date javascript object to a string using OpenERP's
+ * Converts a Date javascript object to a string using Jad's
  * date string format (exemple: '2011-12-01').
  * 
  * As a date is not subject to time zones, we assume it should be
@@ -134,10 +134,10 @@ instance.web.date_to_str = function(obj) {
 };
 
 /**
- * Converts a Date javascript object to a string using OpenERP's
+ * Converts a Date javascript object to a string using Jad's
  * time string format (exemple: '15:12:35').
  * 
- * The OpenERP times are supposed to always be naive times. We assume it is
+ * The Jad times are supposed to always be naive times. We assume it is
  * represented using a javascript Date with a date 1 of January 1970 and a
  * time corresponding to the meant time in the browser's time zone.
  * 

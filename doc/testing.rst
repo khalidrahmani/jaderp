@@ -1,19 +1,19 @@
 .. highlight:: javascript
 
-Testing in OpenERP Web
+Testing in Jad Web
 ======================
 
 Javascript Unit Testing
 -----------------------
 
-OpenERP Web 7.0 includes means to unit-test both the core code of
-OpenERP Web and your own javascript modules. On the javascript side,
+Jad Web 7.0 includes means to unit-test both the core code of
+Jad Web and your own javascript modules. On the javascript side,
 unit-testing is based on QUnit_ with a number of helpers and
-extensions for better integration with OpenERP.
+extensions for better integration with Jad.
 
-To see what the runner looks like, find (or start) an OpenERP server
+To see what the runner looks like, find (or start) an Jad server
 with the web client enabled, and navigate to ``/web/tests`` e.g. `on
-OpenERP's CI <http://trunk.runbot.openerp.com/web/tests>`_. This will
+Jad's CI <http://trunk.runbot.openerp.com/web/tests>`_. This will
 show the runner selector, which lists all modules with javascript unit
 tests, and allows starting any of them (or all javascript tests in all
 modules at once).
@@ -66,14 +66,14 @@ The next step is to create a test case::
     });
 
 All testing helpers and structures live in the ``openerp.testing``
-module. OpenERP tests live in a :js:func:`~openerp.testing.section`,
+module. Jad tests live in a :js:func:`~openerp.testing.section`,
 which is itself part of a module. The first argument to a section is
 the name of the section, the second one is the section body.
 
 :js:func:`test <openerp.testing.case>`, provided by the
 :js:func:`~openerp.testing.section` to the callback, is used to
 register a given test case which will be run whenever the test runner
-actually does its job. OpenERP Web test case use standard `QUnit
+actually does its job. Jad Web test case use standard `QUnit
 assertions`_ within them.
 
 Launching the test runner at this point will run the test and display
@@ -92,7 +92,7 @@ will make it pass:
 Assertions
 ----------
 
-As noted above, OpenERP Web's tests use `qunit assertions`_. They are
+As noted above, Jad Web's tests use `qunit assertions`_. They are
 available globally (so they can just be called without references to
 anything). The following list is available:
 
@@ -142,10 +142,10 @@ anything). The following list is available:
 
     inverse operation to :js:func:`equal`
 
-Getting an OpenERP instance
+Getting an Jad instance
 ---------------------------
 
-The OpenERP instance is the base through which most OpenERP Web
+The Jad instance is the base through which most Jad Web
 modules behaviors (functions, objects, …) are accessed. As a result,
 the test framework automatically builds one, and loads the module
 being tested and all of its dependencies inside it. This new instance
@@ -346,7 +346,7 @@ To do this, set the :js:attr:`rpc option <TestOptions.rpc>` to
 
     * If it matches the pattern ``model:method`` (if it contains a
       colon, essentially) the call will set up the mocking of an RPC
-      call straight to the OpenERP server (through XMLRPC) as
+      call straight to the Jad server (through XMLRPC) as
       performed via e.g. :js:func:`openerp.web.Model.call`.
 
       In that case, ``handler`` should be a function taking two
@@ -418,7 +418,7 @@ Actual RPC
 
 A more realistic (but significantly slower and more expensive) way to
 perform RPC calls is to perform actual calls to an actually running
-OpenERP server. To do this, set the :js:attr:`rpc option
+Jad server. To do this, set the :js:attr:`rpc option
 <~TestOptions.rpc>` to ``rpc``, it will not provide any new parameter
 but will enable actual RPC, and the automatic creation and destruction
 of databases (from a specified source) around tests.
@@ -609,7 +609,7 @@ complexities.
    `easy_install
    <http://packages.python.org/distribute/easy_install.html>`_.
 
-   The former is the unit-testing framework used by OpenERP, the
+   The former is the unit-testing framework used by Jad, the
    latter is an adapter module to run qunit_ test suites and convert
    their result into something unittest2_ can understand and report.
 
@@ -641,9 +641,9 @@ complexities.
        (and tend to just segfault when something goes wrong in
        PhantomJS_ itself so they're a pain to debug).
 
-3. Set up :ref:`OpenERP Command <openerpcommand:openerp-command>`,
+3. Set up :ref:`Jad Command <openerpcommand:openerp-command>`,
    which will be used to actually run the tests: running the qunit_
-   test suite requires a running server, so at this point OpenERP
+   test suite requires a running server, so at this point Jad
    Server isn't able to do it on its own during the building/testing
    process.
 
@@ -654,7 +654,7 @@ complexities.
 
        For some tests, a source database needs to be duplicated. This
        operation requires that there be no connection to the database
-       being duplicated, but OpenERP doesn't currently break
+       being duplicated, but Jad doesn't currently break
        existing/outstanding connections, so restarting the server is
        the simplest way to ensure everything is in the right state.
 
@@ -675,12 +675,12 @@ number of tests run and the time it took:
     :language: text
 
 Congratulation, you have just performed a successful "offline" run of
-the OpenERP Web test suite.
+the Jad Web test suite.
 
 .. note::
 
     Note that this runs all the Python tests for the ``web`` module,
-    but all the web tests for all of OpenERP. This can be surprising.
+    but all the web tests for all of Jad. This can be surprising.
 
 .. _qunit: http://qunitjs.com/
 

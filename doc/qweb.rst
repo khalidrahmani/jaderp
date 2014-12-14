@@ -1,7 +1,7 @@
 QWeb
 ====
 
-QWeb is the template engine used by the OpenERP Web Client. It is an
+QWeb is the template engine used by the Jad Web Client. It is an
 XML-based templating language, similar to `Genshi
 <http://en.wikipedia.org/wiki/Genshi_(templating_language)>`_,
 `Thymeleaf <http://en.wikipedia.org/wiki/Thymeleaf>`_ or `Facelets
@@ -11,9 +11,9 @@ XML-based templating language, similar to `Genshi
 * Each template file (XML files) contains multiple templates, where
   template engine usually have a 1:1 mapping between template files
   and templates.
-* It has special support in OpenERP Web's
+* It has special support in Jad Web's
   :class:`~instance.web.Widget`, though it can be used outside of
-  OpenERP Web (and it's possible to use :class:`~instance.web.Widget`
+  Jad Web (and it's possible to use :class:`~instance.web.Widget`
   without relying on the QWeb integration).
 
 The rationale behind using QWeb instead of a more popular template syntax is
@@ -117,7 +117,7 @@ to the user:
     The QWeb "renderer", handles most of QWeb's logic (loading,
     parsing, compiling and rendering templates).
 
-    OpenERP Web instantiates one for the user, and sets it to
+    Jad Web instantiates one for the user, and sets it to
     ``instance.web.qweb``. It also loads all the template files of the
     various modules into that QWeb instance.
 
@@ -136,7 +136,7 @@ to the user:
 
     The engine exposes an other method which may be useful in some
     cases (e.g. if you need a separate template namespace with, in
-    OpenERP Web, Kanban views get their own :js:class:`QWeb2.Engine`
+    Jad Web, Kanban views get their own :js:class:`QWeb2.Engine`
     instance so their templates don't collide with more general
     "module" templates):
 
@@ -184,7 +184,7 @@ to the user:
     .. js:attribute:: QWeb2.Engine.preprocess_node
 
         A ``Function``. If present, called before compiling each DOM
-        node to template code. In OpenERP Web, this is used to
+        node to template code. In Jad Web, this is used to
         automatically translate text content and some attributes in
         templates. Defaults to ``null``.
 
@@ -197,7 +197,7 @@ A basic QWeb template is nothing more than an XHTML document (as it
 must be valid XML), which will be output as-is. But the rendering can
 be customized with bits of logic called "directives". Directives are
 attributes elements prefixed by :js:attr:`~QWeb2.Engine.prefix` (this
-document will use the default prefix ``t``, as does OpenERP Web).
+document will use the default prefix ``t``, as does Jad Web).
 
 A directive will usually control or alter the output of the element it
 is set on. If no suitable element is available, the prefix itself can
@@ -468,7 +468,7 @@ Template Inheritance and Extension
 
     :param String template: name of the template to extend
 
-    Works similarly to OpenERP models: if used on its own, will alter
+    Works similarly to Jad models: if used on its own, will alter
     the specified template in-place; if used in conjunction with
     :ref:`t-name <qweb-directive-name>` will create a new template
     using the old one as a base.

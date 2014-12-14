@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #----------------------------------------------------------
-# OpenERP Web HTTP layer
+# Jad Web HTTP layer
 #----------------------------------------------------------
 import ast
 import cgi
@@ -41,7 +41,7 @@ _logger = logging.getLogger(__name__)
 # RequestHandler
 #----------------------------------------------------------
 class WebRequest(object):
-    """ Parent class for all OpenERP Web request types, mostly deals with
+    """ Parent class for all Jad Web request types, mostly deals with
     initialization and setup of the request object (the dispatching itself has
     to be handled by the subclasses)
 
@@ -66,12 +66,12 @@ class WebRequest(object):
 
     .. attribute:: session_id
 
-        opaque identifier for the :class:`session.OpenERPSession` instance of
+        opaque identifier for the :class:`session.JadSession` instance of
         the current request
 
     .. attribute:: session
 
-        :class:`~session.OpenERPSession` instance for the current request
+        :class:`~session.JadSession` instance for the current request
 
     .. attribute:: context
 
@@ -88,11 +88,11 @@ class WebRequest(object):
 
     def init(self, params):
         self.params = dict(params)
-        # OpenERP session setup
+        # Jad session setup
         self.session_id = self.params.pop("session_id", None) or uuid.uuid4().hex
         self.session = self.httpsession.get(self.session_id)
         if not self.session:
-            self.session = session.OpenERPSession()
+            self.session = session.JadSession()
             self.httpsession[self.session_id] = self.session
 
         # set db/uid trackers - they're cleaned up at the WSGI
@@ -205,7 +205,7 @@ class JsonRequest(WebRequest):
         except session.AuthenticationError:
             error = {
                 'code': 100,
-                'message': "OpenERP Session Invalid",
+                'message': "Jad Session Invalid",
                 'data': {
                     'type': 'session_invalid',
                     'debug': traceback.format_exc()
@@ -214,7 +214,7 @@ class JsonRequest(WebRequest):
         except xmlrpclib.Fault, e:
             error = {
                 'code': 200,
-                'message': "OpenERP Server Error",
+                'message': "Jad Server Error",
                 'data': {
                     'type': 'server_exception',
                     'fault_code': e.faultCode,
@@ -227,7 +227,7 @@ class JsonRequest(WebRequest):
                 ("An error occured while handling a json request")
             error = {
                 'code': 300,
-                'message': "OpenERP WebClient Error",
+                'message': "Jad WebClient Error",
                 'data': {
                     'type': 'client_exception',
                     'debug': "Client %s" % traceback.format_exc()
@@ -286,7 +286,7 @@ class HttpRequest(WebRequest):
         except xmlrpclib.Fault, e:
             r = werkzeug.exceptions.InternalServerError(cgi.escape(simplejson.dumps({
                 'code': 200,
-                'message': "OpenERP Server Error",
+                'message': "Jad Server Error",
                 'data': {
                     'type': 'server_exception',
                     'fault_code': e.faultCode,
@@ -299,7 +299,7 @@ class HttpRequest(WebRequest):
                     "An error occurred while handling a json request")
             r = werkzeug.exceptions.InternalServerError(cgi.escape(simplejson.dumps({
                 'code': 300,
-                'message': "OpenERP WebClient Error",
+                'message': "Jad WebClient Error",
                 'data': {
                     'type': 'client_exception',
                     'debug': "Client %s" % traceback.format_exc()
@@ -394,12 +394,12 @@ def session_context(request, session_store, session_lock, sid):
     try:
         yield request.session
     finally:
-        # Remove all OpenERPSession instances with no uid, they're generated
-        # either by login process or by HTTP requests without an OpenERP
+        # Remove all JadSession instances with no uid, they're generated
+        # either by login process or by HTTP requests without an Jad
         # session id, and are generally noise
         removed_sessions = set()
         for key, value in request.session.items():
-            if not isinstance(value, session.OpenERPSession):
+            if not isinstance(value, session.JadSession):
                 continue
             if getattr(value, '_suicide', False) or (
                         not value._uid
@@ -427,7 +427,7 @@ def session_context(request, session_store, session_lock, sid):
                 in_store = session_store.get(sid)
                 for k, v in request.session.iteritems():
                     stored = in_store.get(k)
-                    if stored and isinstance(v, session.OpenERPSession):
+                    if stored and isinstance(v, session.JadSession):
                         if hasattr(v, 'contexts_store'):
                             del v.contexts_store
                         if hasattr(v, 'domains_store'):
@@ -508,7 +508,7 @@ def session_path():
     return path
 
 class Root(object):
-    """Root WSGI application for the OpenERP Web Client.
+    """Root WSGI application for the Jad Web Client.
     """
     def __init__(self):
         self.addons = {}

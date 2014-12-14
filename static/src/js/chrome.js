@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * OpenERP Web chrome
+ * Jad Web chrome
  *---------------------------------------------------------*/
 openerp.web.chrome = function(instance) {
 var QWeb = instance.web.qweb,
@@ -54,7 +54,7 @@ instance.web.client_actions.add("action_warn", "instance.web.action_warn");
 
 /**
  * The very minimal function everything should call to create a dialog
- * in OpenERP Web Client.
+ * in Jad Web Client.
  */
 instance.web.dialog = function(element) {
     var result = element.dialog.apply(element, _.rest(_.toArray(arguments)));
@@ -80,7 +80,7 @@ instance.web.Dialog = instance.web.Widget.extend({
             - buttons: Deprecated. The buttons key is not propagated to jQueryUI Dialog. It must be a dictionary (key = button
                 label, value = click handler) or a list of dictionaries (each element in the dictionary is send to the
                 corresponding method of a jQuery element targeting the <button> tag). It is deprecated because all dialogs
-                in OpenERP must be personalized in some way (button in red, link instead of button, ...) and this
+                in Jad must be personalized in some way (button in red, link instead of button, ...) and this
                 feature does not allow that kind of personalization.
             - destroy_on_close: Default true. If true and the dialog is closed, it is automatically destroyed.
         @param {jQuery object} content Some content to replace this.$el .
@@ -250,7 +250,7 @@ instance.web.CrashManager = instance.web.Class.extend({
         // yes, exception handling is shitty
         if (error.code === 300 && error.data && error.data.type == "client_exception" && error.data.debug.match("SessionExpiredException")) {
             this.show_warning({type: "Session Expired", data: {
-                fault_code: _t("Your OpenERP session expired. Please refresh the current web page.")
+                fault_code: _t("Your Jad session expired. Please refresh the current web page.")
             }});
             return;
         }
@@ -272,7 +272,7 @@ instance.web.CrashManager = instance.web.Class.extend({
             return;
         }
         instance.web.dialog($('<div>' + QWeb.render('CrashManager.warning', {error: error}) + '</div>'), {
-            title: "OpenERP " + _.str.capitalize(error.type),
+            title: "Jad " + _.str.capitalize(error.type),
             buttons: [
                 {text: _t("Ok"), click: function() { $(this).dialog("close"); }}
             ]
@@ -287,7 +287,7 @@ instance.web.CrashManager = instance.web.Class.extend({
             $(this).dialog("close");
         };
         var dialog = new instance.web.Dialog(this, {
-            title: "OpenERP " + _.str.capitalize(error.type),
+            title: "Jad " + _.str.capitalize(error.type),
             width: '80%',
             height: '50%',
             min_width: '800px',
@@ -1273,7 +1273,7 @@ instance.web.WebClient = instance.web.Client.extend({
     set_title: function(title) {
         title = _.str.clean(title);
         var sep = _.isEmpty(title) ? '' : ' - ';
-        document.title = title + sep + 'OpenERP';
+        document.title = title + sep + 'Jad';
     },
     show_common: function() {
         var self = this;

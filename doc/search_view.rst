@@ -1,7 +1,7 @@
 Search View
 ===========
 
-OpenERP Web 7.0 implements a unified facets-based search view instead
+Jad Web 7.0 implements a unified facets-based search view instead
 of the previous form-like search view (composed of buttons and
 multiple fields). The goal for this change is twofold:
 
@@ -11,16 +11,16 @@ multiple fields). The goal for this change is twofold:
   to be created and losing everything).
 
 * Improve the looks and behaviors of the view, and the fit within
-  OpenERP Web's new design.
+  Jad Web's new design.
 
 The internal structure of the faceted search is inspired by
 `VisualSearch <http://documentcloud.github.com/visualsearch/>`_
 [#previous]_.
 
 As does VisualSearch, the new search view is based on `Backbone`_ and
-makes significant use of Backbone's models and collections (OpenERP
+makes significant use of Backbone's models and collections (Jad
 Web's widgets make a good replacement for Backbone's own views). As a
-result, understanding the implementation details of the OpenERP Web 7
+result, understanding the implementation details of the Jad Web 7
 search view also requires a basic understanding of Backbone's models,
 collections and events.
 
@@ -36,11 +36,11 @@ collections and events.
 Working with the search view: creating new inputs
 -------------------------------------------------
 
-The primary component of search views, as with all other OpenERP
+The primary component of search views, as with all other Jad
 views, are inputs. The search view has two types of inputs — filters
 and fields — but only one is easly customizable: fields.
 
-The mapping from OpenERP field types (and widgets) to search view
+The mapping from Jad field types (and widgets) to search view
 objects is stored in the ``openerp.web.search.fields``
 :js:class:`~openerp.web.Registry` where new field types and widgets
 can be added.
@@ -160,14 +160,14 @@ Converting from facet objects
 +++++++++++++++++++++++++++++
 
 Ultimately, the point of the search view is to allow searching. In
-OpenERP this is done via :ref:`domains <openerpserver:domains>`. On
-the other hand, the OpenERP Web 7 search view's state is modelled
+Jad this is done via :ref:`domains <openerpserver:domains>`. On
+the other hand, the Jad Web 7 search view's state is modelled
 after a collection of :js:class:`~openerp.web.search.Facet`, and each
 field of a search view may have special requirements when it comes to
 the domains it produces [#special]_.
 
 So there needs to be some way of mapping
-:js:class:`~openerp.web.search.Facet` objects to OpenERP search data.
+:js:class:`~openerp.web.search.Facet` objects to Jad search data.
 
 This is done via an input's
 :js:func:`~openerp.web.search.Input.get_domain` and
@@ -307,7 +307,7 @@ Field services
 :js:class:`~openerp.web.search.Field` provides a default
 implementation of :js:func:`~openerp.web.search.Input.get_domain` and
 :js:func:`~openerp.web.search.Input.get_context` taking care of most
-of the peculiarities pertaining to OpenERP's handling of fields in
+of the peculiarities pertaining to Jad's handling of fields in
 search views. It also provides finer hooks to let developers of new
 fields and widgets customize the behavior they want without
 necessarily having to reimplement all of
@@ -405,7 +405,7 @@ Changes
 .. todo:: merge in changelog instead?
 
 The displaying of the search view was significantly altered from
-OpenERP Web 6.1 to OpenERP Web 7.
+Jad Web 6.1 to Jad Web 7.
 
 As a result, while the external API used to interact with the search
 view does not change many internal details — including the interaction

@@ -19,7 +19,7 @@ instance.web.form = {};
  *     this event is triggered all fields should reprocess their modifiers.
  *     - field_changed:<field_name> : when the value of a field change, an event is triggered
  *     named "field_changed:<field_name>" with <field_name> replaced by the name of the field.
- *     This event is not related to the on_change mechanism of OpenERP and is always called
+ *     This event is not related to the on_change mechanism of Jad and is always called
  *     when the value of a field is setted or changed. This event is only triggered when the
  *     value of the field is syntactically valid, but it can be triggered when the value
  *     is sematically invalid (ie, when a required field is false). It is possible that an event
@@ -45,9 +45,9 @@ instance.web.form.FieldManagerMixin = {
     */
     set_values: function(values) {},
     /**
-    Computes an OpenERP domain.
+    Computes an Jad domain.
 
-    @param (list) expression An OpenERP domain.
+    @param (list) expression An Jad domain.
     @return (boolean) The computed value of the domain.
     */
     compute_domain: function(expression) {},
@@ -56,7 +56,7 @@ instance.web.form.FieldManagerMixin = {
     the field are only supposed to use this context to evualuate their own, they should not
     extend it.
 
-    @return (CompoundContext) An OpenERP context.
+    @return (CompoundContext) An Jad context.
     */
     build_eval_context: function() {},
 };
@@ -82,7 +82,7 @@ instance.web.FormView = instance.web.View.extend(instance.web.form.FieldManagerM
      *
      * @param {instance.web.Session} session the current openerp session
      * @param {instance.web.DataSet} dataset the dataset this view will work with
-     * @param {String} view_id the identifier of the OpenERP view object
+     * @param {String} view_id the identifier of the Jad view object
      * @param {Object} options
      *                  - resize_textareas : [true|false|max_height]
      *
@@ -2006,7 +2006,7 @@ instance.web.form.FieldInterface = {
      * before the widget is inserted into the DOM.
      *
      * set_value() must be able, at any moment, to handle the syntax returned by the "read" method of the
-     * osv class in the OpenERP server as well as the syntax used by the set_value() (see below). It must
+     * osv class in the Jad server as well as the syntax used by the set_value() (see below). It must
      * also be able to handle any other format commonly used in the _defaults key on the models in the addons
      * as well as any format commonly returned in a on_change. It must be able to autodetect those formats as
      * no information is ever given to know which format is used.
@@ -2016,7 +2016,7 @@ instance.web.form.FieldInterface = {
      * Get the current value of the widget.
      *
      * Must always return a syntactically correct value to be passed to the "write" method of the osv class in
-     * the OpenERP server, although it is not assumed to respect the constraints applied to the field.
+     * the Jad server, although it is not assumed to respect the constraints applied to the field.
      * For example if the field is marked as "required", a call to get_value() can return false.
      *
      * get_value() can also be called *before* a call to set_value() and, in that case, is supposed to
@@ -2160,7 +2160,7 @@ instance.web.form.AbstractField = instance.web.form.FormWidget.extend(instance.w
     },
     /**
      * Method useful to implement to ease validity testing. Must return true if the current
-     * value is similar to false in OpenERP.
+     * value is similar to false in Jad.
      */
     is_false: function() {
         return this.get('value') === false;
@@ -5524,7 +5524,7 @@ instance.web.form.FieldMonetary = instance.web.form.FieldFloat.extend({
  * Registry of form fields, called by :js:`instance.web.FormView`.
  *
  * All referenced classes must implement FieldInterface. Those represent the classes whose instances
- * will substitute to the <field> tags as defined in OpenERP's views.
+ * will substitute to the <field> tags as defined in Jad's views.
  */
 instance.web.form.widgets = new instance.web.Registry({
     'char' : 'instance.web.form.FieldChar',
@@ -5558,7 +5558,7 @@ instance.web.form.widgets = new instance.web.Registry({
 
 /**
  * Registry of widgets usable in the form view that can substitute to any possible
- * tags defined in OpenERP's form views.
+ * tags defined in Jad's form views.
  *
  * Every referenced class should extend FormWidget.
  */

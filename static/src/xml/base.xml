@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <p class="oe_grey" style="margin: 10px">
-                    Fill in this form to create an OpenERP database. You can
+                    Fill in this form to create an Jad database. You can
                     create databases for different companies or for different
                     goals (testing, production). Once the database is created,
                     you will be able to install your first application.
@@ -140,7 +140,7 @@
                         <td class="oe_form_group_cell">
                             <span class="oe_form_field oe_form_field_boolean oe_grey" >
                                 <input type="checkbox" name="demo_data" />
-                                Check this box to evaluate OpenERP.
+                                Check this box to evaluate Jad.
                             </span>
                         </td>
                     </tr>
@@ -435,10 +435,10 @@
       <h3>Version <t t-esc="version_info.server_version"/></h3>
 
       <div class="oe_bottom">
-        <p>Copyright © 2004-TODAY OpenERP SA. All Rights Reserved.<br />
-            OpenERP is a trademark of the <a target="_blank" href="http://openerp.com/" style="text-decoration: underline;">OpenERP SA Company</a>.</p>
+        <p>Copyright © 2004-TODAY Jad SA. All Rights Reserved.<br />
+            Jad is a trademark of the <a target="_blank" href="http://openerp.com/" style="text-decoration: underline;">Jad SA Company</a>.</p>
         <p>Licenced under the terms of <a target="_blank" href="http://www.gnu.org/licenses/agpl.html" style="text-decoration: underline;">GNU Affero General Public License</a></p>
-        <p>For more information visit <a target="_blank" href="http://openerp.com/" style="text-decoration: underline;">OpenERP.com</a></p>
+        <p>For more information visit <a target="_blank" href="http://openerp.com/" style="text-decoration: underline;">Jad.com</a></p>
       </div>
     </div>
 

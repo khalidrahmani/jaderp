@@ -59,7 +59,7 @@ msgstr "mažiau arba lygu"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
@@ -353,8 +353,8 @@ msgstr "Mygtuko tipas:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA Įmonė"
+msgid "Jad SA Company"
+msgstr "Jad SA Įmonė"
 
 #. module: web
 #. openerp-web
@@ -895,7 +895,7 @@ msgstr "Ieškoti: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
+msgid "Check this box to evaluate Jad."
 msgstr ""
 
 #. module: web
@@ -954,8 +954,8 @@ msgstr "1. Importuoti .CSV failą"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1110,8 +1110,8 @@ msgstr "Ištrinti"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "Mano OpenERP.com profilis"
+msgid "My Jad.com account"
+msgstr "Mano Jad.com profilis"
 
 #. module: web
 #. openerp-web
@@ -1484,9 +1484,9 @@ msgstr "Ištrinti viską"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
-"Jūsų OpenERP laikas pasibaigė. Prašome perkrauti dabartinį tinklalapį."
+"Jūsų Jad laikas pasibaigė. Prašome perkrauti dabartinį tinklalapį."
 
 #. module: web
 #. openerp-web
@@ -1912,8 +1912,8 @@ msgstr "Prašome pasirinkti laukus eksportuojamo sąrašo išsaugojimui..."
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "Visos teisės saugomos © 2004-TODAY OpenERP SA."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "Visos teisės saugomos © 2004-TODAY Jad SA."
 
 #. module: web
 #. openerp-web
@@ -2036,8 +2036,8 @@ msgstr "Numatyta:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2424,8 +2424,8 @@ msgstr "Mygtukas"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP yra prekinis ženklas"
+msgid "Jad is a trademark of the"
+msgstr "Jad yra prekinis ženklas"
 
 #. module: web
 #. openerp-web
@@ -2470,8 +2470,8 @@ msgstr "nėra teigiamas"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "Apie OpenERP"
+msgid "About Jad"
+msgstr "Apie Jad"
 
 #. module: web
 #. openerp-web

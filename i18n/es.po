@@ -59,14 +59,14 @@ msgstr "menor o igual que"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
 "created,\n"
 "                    you will be able to install your first application."
 msgstr ""
-"Rellene este formulario para crear una base de datos de OpenERP. Puede crear "
+"Rellene este formulario para crear una base de datos de Jad. Puede crear "
 "bases de datos para diferentes compañías o para diferentes objetivos "
 "(pruebas, en producción...). Una vez se cree la base de datos, podrá "
 "instalar su primera aplicación."
@@ -357,8 +357,8 @@ msgstr "Tipo de Botón"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "Compañía OpenERP SA"
+msgid "Jad SA Company"
+msgstr "Compañía Jad SA"
 
 #. module: web
 #. openerp-web
@@ -899,8 +899,8 @@ msgstr "Buscar: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "Marque esta casilla para evaluar OpenERP."
+msgid "Check this box to evaluate Jad."
+msgstr "Marque esta casilla para evaluar Jad."
 
 #. module: web
 #. openerp-web
@@ -958,8 +958,8 @@ msgstr "1. Importar un archivo .CSV"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1116,8 +1116,8 @@ msgstr "Borrar"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "Mi cuenta OpenERP.com"
+msgid "My Jad.com account"
+msgstr "Mi cuenta Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1495,8 +1495,8 @@ msgstr "Eliminar Todo"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
-msgstr "Su sesión de OpenERP ha expirado. Refresque la página web actual."
+msgid "Your Jad session expired. Please refresh the current web page."
+msgstr "Su sesión de Jad ha expirado. Refresque la página web actual."
 
 #. module: web
 #. openerp-web
@@ -1926,8 +1926,8 @@ msgstr ""
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "Copyright ©  2004-HOY OpenERP SA.  Todos los derechos reservados."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "Copyright ©  2004-HOY Jad SA.  Todos los derechos reservados."
 
 #. module: web
 #. openerp-web
@@ -2050,8 +2050,8 @@ msgstr "Por defecto:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2440,8 +2440,8 @@ msgstr "Botón"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP es una marca registrada de la"
+msgid "Jad is a trademark of the"
+msgstr "Jad es una marca registrada de la"
 
 #. module: web
 #. openerp-web
@@ -2486,8 +2486,8 @@ msgstr "es falso"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "Acerca de OpenERP"
+msgid "About Jad"
+msgstr "Acerca de Jad"
 
 #. module: web
 #. openerp-web

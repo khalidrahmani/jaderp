@@ -3,7 +3,7 @@
 Client actions
 ==============
 
-Client actions are the client-side version of OpenERP's "Server
+Client actions are the client-side version of Jad's "Server
 Actions": instead of allowing for semi-arbitrary code to be executed
 in the server, they allow for execution of client-customized code.
 
@@ -17,7 +17,7 @@ can be made generic and reused in multiple contexts).
 General Structure
 -----------------
 
-In the OpenERP Web code, a client action only requires two pieces of
+In the Jad Web code, a client action only requires two pieces of
 information:
 
 * Mapping the action's ``tag`` to an object
@@ -25,7 +25,7 @@ information:
 * Providing said object. Two different types of objects can be mapped
   to a client action:
 
-  * An OpenERP Web widget, which must inherit from
+  * An Jad Web widget, which must inherit from
     :js:class:`openerp.web.Widget`
 
   * A regular javascript function

@@ -1,4 +1,4 @@
-// Test support structures and methods for OpenERP
+// Test support structures and methods for Jad
 openerp.testing = {};
 (function (testing) {
     var dependencies = {

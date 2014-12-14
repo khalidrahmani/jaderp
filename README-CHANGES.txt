@@ -13,7 +13,7 @@ in openerp7/web/static/src/css/base.css
 change  <td colspan="2" class="announcement_bar" style="display: none;"> in : openerp7/mail/static/src/xml/announcement.xml
 """""""""
 remove            <div class="oe_footer">
-                    Powered by <a href="http://www.openerp.com" target="_blank"><span>OpenERP</span></a>
+                    Powered by <a href="http://www.openerp.com" target="_blank"><span>Jad</span></a>
                    </div>
 openerp7/web/static/src/xml/base.xml
 

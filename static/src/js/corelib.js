@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012, OpenERP S.A.
+ * Copyright (c) 2012, Jad S.A.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -466,7 +466,7 @@ instance.web.PropertiesMixin = _.extend({}, instance.web.EventDispatcherMixin, {
 // Classes
 
 /**
-    A class containing common utility methods useful when working with OpenERP as well as the PropertiesMixin.
+    A class containing common utility methods useful when working with Jad as well as the PropertiesMixin.
 */
 instance.web.Controller = instance.web.Class.extend(instance.web.PropertiesMixin, {
     /**
@@ -491,7 +491,7 @@ instance.web.Controller = instance.web.Class.extend(instance.web.PropertiesMixin
      *
      * Other methods will fix the bound method to what it is when creating the
      * binding/proxy, which is fine in most javascript code but problematic in
-     * OpenERP Web where developers may want to replace existing callbacks with
+     * Jad Web where developers may want to replace existing callbacks with
      * theirs.
      *
      * The semantics of this precisely replace closing over the method call.
@@ -841,7 +841,7 @@ instance.web.Registry = instance.web.Class.extend({
      * registry was created.
      *
      * An object path is simply a dotted name from the instance root to the
-     * object pointed to (e.g. ``"instance.web.Session"`` for an OpenERP
+     * object pointed to (e.g. ``"instance.web.Session"`` for an Jad
      * session object).
      *
      * @constructs instance.web.Registry

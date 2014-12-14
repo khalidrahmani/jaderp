@@ -59,14 +59,14 @@ msgstr "manje ili jednako od"
 #: code:addons/web/static/src/xml/base.xml:114
 #, python-format
 msgid ""
-"Fill in this form to create an OpenERP database. You can\n"
+"Fill in this form to create an Jad database. You can\n"
 "                    create databases for different companies or for "
 "different\n"
 "                    goals (testing, production). Once the database is "
 "created,\n"
 "                    you will be able to install your first application."
 msgstr ""
-"Popunite ovu vormu da kreirate bazu podataka OpenERP-a. Možete\n"
+"Popunite ovu vormu da kreirate bazu podataka Jad-a. Možete\n"
 "                    kreirati bazu za različite kompanije ili za različite\n"
 "                    ciljeve (testiranje, produkciju). Jednom kada je \n"
 "                    baza kreirana, bićete u mogućnosti da instalirate\n"
@@ -359,8 +359,8 @@ msgstr "Tip dugmeta:"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:441
 #, python-format
-msgid "OpenERP SA Company"
-msgstr "OpenERP SA Kompanija"
+msgid "Jad SA Company"
+msgstr "Jad SA Kompanija"
 
 #. module: web
 #. openerp-web
@@ -901,8 +901,8 @@ msgstr "Pretraži: "
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:141
 #, python-format
-msgid "Check this box to evaluate OpenERP."
-msgstr "Označite ovo polje da ocjenite OpenERP"
+msgid "Check this box to evaluate Jad."
+msgstr "Označite ovo polje da ocjenite Jad"
 
 #. module: web
 #. openerp-web
@@ -960,8 +960,8 @@ msgstr "Uvezi .CSV fajl"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:443
 #, python-format
-msgid "OpenERP.com"
-msgstr "OpenERP.com"
+msgid "Jad.com"
+msgstr "Jad.com"
 
 #. module: web
 #. openerp-web
@@ -1116,8 +1116,8 @@ msgstr "Obriši"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:425
 #, python-format
-msgid "My OpenERP.com account"
-msgstr "Moj OpenERP račun"
+msgid "My Jad.com account"
+msgstr "Moj Jad račun"
 
 #. module: web
 #. openerp-web
@@ -1494,9 +1494,9 @@ msgstr "Ukloni sve"
 #. openerp-web
 #: code:addons/web/static/src/js/chrome.js:253
 #, python-format
-msgid "Your OpenERP session expired. Please refresh the current web page."
+msgid "Your Jad session expired. Please refresh the current web page."
 msgstr ""
-"Vaša OpenERP sesija je istekla. Molimo Vas da osvježite trenutnu web "
+"Vaša Jad sesija je istekla. Molimo Vas da osvježite trenutnu web "
 "stranicu."
 
 #. module: web
@@ -1925,8 +1925,8 @@ msgstr "Molimo da odaberete polja za čuvanje liste izvoza..."
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "Copyright © 2004-TODAY OpenERP SA. All Rights Reserved."
-msgstr "Autorsko pravo © 2004-TODAY OpenERP SA. Sva prava zadržana."
+msgid "Copyright © 2004-TODAY Jad SA. All Rights Reserved."
+msgstr "Autorsko pravo © 2004-TODAY Jad SA. Sva prava zadržana."
 
 #. module: web
 #. openerp-web
@@ -2049,8 +2049,8 @@ msgstr "Zadano:"
 #: code:addons/web/static/src/xml/base.xml:82
 #: code:addons/web/static/src/xml/base.xml:468
 #, python-format
-msgid "OpenERP"
-msgstr "OpenERP"
+msgid "Jad"
+msgstr "Jad"
 
 #. module: web
 #. openerp-web
@@ -2439,8 +2439,8 @@ msgstr "Dugme"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:440
 #, python-format
-msgid "OpenERP is a trademark of the"
-msgstr "OpenERP je prodajna marka"
+msgid "Jad is a trademark of the"
+msgstr "Jad je prodajna marka"
 
 #. module: web
 #. openerp-web
@@ -2485,8 +2485,8 @@ msgstr "je pogrešno"
 #. openerp-web
 #: code:addons/web/static/src/xml/base.xml:426
 #, python-format
-msgid "About OpenERP"
-msgstr "O OpenERP-u"
+msgid "About Jad"
+msgstr "O Jad-u"
 
 #. module: web
 #. openerp-web

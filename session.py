@@ -12,7 +12,7 @@ import openerp
 _logger = logging.getLogger(__name__)
 
 #----------------------------------------------------------
-# OpenERPSession RPC openerp backend access
+# JadSession RPC openerp backend access
 #----------------------------------------------------------
 class AuthenticationError(Exception):
     pass
@@ -56,15 +56,15 @@ class Model(object):
         records = self.read(record_ids, fields or [], context or {})
         return records
 
-class OpenERPSession(object):
+class JadSession(object):
     """
-    An OpenERP RPC session, a given user can own multiple such sessions
+    An Jad RPC session, a given user can own multiple such sessions
     in a web session.
 
     .. attribute:: context
 
         The session context, a ``dict``. Can be reloaded by calling
-        :meth:`openerpweb.openerpweb.OpenERPSession.get_context`
+        :meth:`openerpweb.openerpweb.JadSession.get_context`
 
     .. attribute:: domains_store
 
@@ -150,7 +150,7 @@ class OpenERPSession(object):
     def model(self, model):
         """ Get an RPC proxy for the object ``model``, bound to this session.
 
-        :param model: an OpenERP model name
+        :param model: an Jad model name
         :type model: str
         :rtype: a model object
         """
@@ -173,7 +173,7 @@ class OpenERPSession(object):
         return self.context
 
     def _fix_lang(self, context):
-        """ OpenERP provides languages which may not make sense and/or may not
+        """ Jad provides languages which may not make sense and/or may not
         be understood by the web client's libraries.
 
         Fix those here.
@@ -182,7 +182,7 @@ class OpenERPSession(object):
         """
         lang = context['lang']
 
-        # inane OpenERP locale
+        # inane Jad locale
         if lang == 'ar_AR':
             lang = 'ar'
 

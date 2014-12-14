@@ -4,10 +4,10 @@
     'version': '7.0.1.0',
     'description':
         """
-OpenERP Web core module.
+Jad Web core module.
 ========================
 
-This module provides the core of the OpenERP Web Client.
+This module provides the core of the Jad Web Client.
         """,
     'depends': [],
     'auto_install': True,

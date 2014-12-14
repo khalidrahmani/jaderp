@@ -1,5 +1,5 @@
 /*---------------------------------------------------------
- * OpenERP Web Boostrap Code
+ * Jad Web Boostrap Code
  *---------------------------------------------------------*/
 
 /**
@@ -17,7 +17,7 @@
         // openerp.instances.sessionname.<module> using a closure
         instances: {},
         /**
-         * OpenERP instance constructor
+         * Jad instance constructor
          *
          * @param {Array|String} modules list of modules to initialize
          */
@@ -50,7 +50,7 @@
 })();
 
 /*---------------------------------------------------------
- * OpenERP Web web module split
+ * Jad Web web module split
  *---------------------------------------------------------*/
 openerp.web = function(session) {
     var files = ["pyeval", "corelib","coresetup","dates","formats","chrome","data","views","search","list","form","list_editable","web_mobile","view_tree","data_export","data_import"];
