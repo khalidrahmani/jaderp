@@ -1,3 +1,15 @@
+JAD :
+
+ssh root@37.187.168.147
+- mot de passe : KCxqdY9dVDpq
+
+develop localy : yahya@yahya:~/AptanaRailsWS/JadSystem$ sudo cp -R web/ /opt/openerp/server/openerp/addons/
+deploy 1 :      yahya@yahya:~/AptanaRailsWS/JadSystem/web$ git push origin master
+       2 :      root@jads:/opt/openerp/server/openerp/addons/web# git pull  
+
+databases : jadsystem.jads.ch  / admin / jadsadmin
+                                 David / david
+
 To disable Messaging : 
 create a nobody group and goto Setting > Technical > User Interface > menu , set menu group to nobody group
 """"""
